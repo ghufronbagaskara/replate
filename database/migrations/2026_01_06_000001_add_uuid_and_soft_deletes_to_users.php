@@ -10,7 +10,6 @@ return new class extends Migration
   {
     Schema::table('users', function (Blueprint $table) {
       $table->uuid('uuid')->unique()->after('id');
-      $table->string('whatsapp_number', 20)->nullable()->after('email');
       $table->softDeletes();
       $table->timestamp('suspended_at')->nullable();
       $table->text('suspension_reason')->nullable();
@@ -23,7 +22,7 @@ return new class extends Migration
   public function down(): void
   {
     Schema::table('users', function (Blueprint $table) {
-      $table->dropColumn(['uuid', 'whatsapp_number', 'deleted_at', 'suspended_at', 'suspension_reason']);
+      $table->dropColumn(['uuid', 'deleted_at', 'suspended_at', 'suspension_reason']);
       $table->dropIndex(['users_email_index']);
       $table->dropIndex(['users_is_admin_index']);
       $table->dropIndex(['users_is_verified_index']);
