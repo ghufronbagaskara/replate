@@ -12,6 +12,7 @@ return new class extends Migration
       $table->uuid('uuid')->unique()->after('id');
       $table->softDeletes();
         $table->timestamp('suspended_at')->nullable();
+    });
   }
 
   public function down(): void
