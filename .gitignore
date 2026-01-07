@@ -1,0 +1,116 @@
+# Laravel & PHP
+/.phpunit.cache
+/vendor
+.phpactor.json
+.phpunit.result.cache
+auth.json
+*.cache
+
+# Node & Dependencies
+/node_modules
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
+
+# Environment & Config
+.env
+.env.*
+!.env.example
+.env.backup
+.env.production
+.env.local
+.env.staging
+
+# Laravel Build & Generated Files
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+/bootstrap/cache/*
+!/bootstrap/cache/.gitignore
+/storage/framework/cache/*
+!/storage/framework/cache/.gitignore
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitignore
+/storage/framework/views/*
+!/storage/framework/views/.gitignore
+/storage/logs/*
+!/storage/logs/.gitignore
+/storage/app/public/*
+!/storage/app/public/.gitignore
+
+# Laravel Homestead
+Homestead.json
+Homestead.yaml
+
+# IDE & Editors
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+.phpstorm.meta.php
+_ide_helper.php
+_ide_helper_models.php
+.php_cs.cache
+.php-cs-fixer.cache
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Laravel Herd Specific
+.herd/
+.herd-local/
+*.herd.log
+
+# Database
+*.sqlite
+*.sqlite-journal
+*.sql
+*.db
+
+# Logs & Debugging
+*.log
+/storage/debugbar
+storage/debugbar/*
+
+# Testing
+coverage/
+.phpunit.result.cache
+.phpunit.cache/
+
+# OS & System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Backup & Temporary
+*.bak
+*.tmp
+*.temp
+*~
+.#*
+
+# Compiled & Optimized
+/public/css/*.map
+/public/js/*.map
+/public/mix-manifest.json
+
+# Documentation (jika auto-generated)
+/docs/_build
+/.phpunit.result.cache
+
+# Deployment Scripts (Optional - uncomment jika tidak ingin commit)
+# /deploy.sh
+# /migrate-to-production.sh
