@@ -69,5 +69,8 @@ class AppServiceProvider extends ServiceProvider
 
     // Prevent accessing missing attributes
     Model::preventAccessingMissingAttributes($this->app->environment('production') === false);
+
+    // Share errors with all views for testing compatibility
+    \Illuminate\Support\Facades\View::share('errors', session('errors', new \Illuminate\Support\ViewErrorBag()));
   }
 }
