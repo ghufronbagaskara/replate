@@ -11,12 +11,7 @@ return new class extends Migration
     Schema::table('users', function (Blueprint $table) {
       $table->uuid('uuid')->unique()->after('id');
       $table->softDeletes();
-      $table->string('suspended_at')->nullable();
-      $table->text('suspension_reason')->nullable();
-      $table->index('email');
-      $table->index('is_admin');
-      $table->index('is_verified');
-    });
+        $table->timestamp('suspended_at')->nullable();
   }
 
   public function down(): void
